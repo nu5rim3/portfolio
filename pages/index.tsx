@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Nusri Samath - Full Stack Developer</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="author" content="Skander Blaiti" />
+        <meta name="author" content="Nusri Samath" />
         <meta name="keywords" content="ReactJS, NextJS" />
         <meta name="description" content="I am a talented Front-End developer with a UI/UX design background." />
         <meta charSet="UTF-8" />
