@@ -10,7 +10,7 @@ export default function Footer() {
             <span className="white">Copyright © {year} <Link href="/">Nu5rim3</Link> - All rights reserved.</span>
             <ul className="flex">
                 <li>
-                    <a href="https://www.facebook.com/blaiti" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/nsamath" target="_blank" rel="noreferrer">
                         <Image src="/icons/facebook.svg" width={24} height={24} alt="facebook-icon" />
                     </a>
                 </li>
