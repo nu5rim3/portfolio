@@ -9,25 +9,30 @@ export default function About() {
                     <AboutCard
                         title="UX/UI Design"
                         icon="/icons/design.svg"
-                        description="I create design  products with unique ideas."
+                        description="I create design  products with unique ideas using Figma."
                         projects={7} />
                     <AboutCard
                         title="Web Design"
                         icon="/icons/code.svg"
-                        description="I develop Front-End with coding super smooth."
-                        projects={10} />
+                        description="I develop Front-End with coding super smooth using React."
+                        projects={5} />
                     <AboutCard
                         title="Mobile"
                         icon="/icons/phone.svg"
-                        description="I develop cross-platform mobile applications."
-                        projects={7} />
+                        description="I develop cross-platform mobile applications using React Native."
+                        projects={3} />
+                    <AboutCard
+                        title="Deployment"
+                        icon="/icons/cloud.svg"
+                        description="I deploy application using AWS."
+                        projects={3} />
                 </div>
                 
                 <div className="flex-full about-text">
                     <h5 className="gray">Introduce</h5>
-                    <h1 className="white">Hello, I&#39;m Skander Blaiti</h1>
+                    <h1 className="white">Hello, I&#39;m Nusri Samath</h1>
                     <h3 className="white">Design is not just what it looks like. Design is how it works!</h3>
-                    <p className="gray">I have proceeded my dream to be a developer as it has been my lifelong ambition. I am a talented Front-End developer with a UI/UX design background. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
+                    <p className="gray">I have proceeded my dream to be a full stack developer as it has been my lifelong ambition. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
                     I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
                 </div>
             </div>
