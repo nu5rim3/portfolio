@@ -15,13 +15,13 @@ export default function Header() {
                         <TypeAnimation
                             // Same String at the start will only be typed once, initially
                             sequence={[
-                                `I love to Design.`,
+                                `I love to design.`,
                                 1000,
                                 `I love to code.`,
                                 1000,
                                 `I love to travel.`,
                                 1000,
-                                `I love to create movies.`,
+                                `I love to film.`,
                                 1000,
                             ]}
                             speed={10} // Custom Speed from 1-99 - Default Speed: 40
