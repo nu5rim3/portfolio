@@ -15,7 +15,7 @@ export default function Header() {
                         <TypeAnimation
                             // Same String at the start will only be typed once, initially
                             sequence={[
-                                `I love to Designer.`,
+                                `I love to Design.`,
                                 1000,
                                 `I love to code.`,
                                 1000,
