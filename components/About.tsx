@@ -30,7 +30,7 @@ export default function About() {
                 
                 <div className="flex-full about-text">
                     <h5 className="gray">Introduce</h5>
-                    <h1 className="white">Hello, I&#39;m Nusri Samath</h1>
+                    <h1 className="white">I&#39;m Nusri Samath</h1>
                     <h3 className="white">Design is not just what it looks like.<br /> Design is how it works!</h3>
                     <p className="gray">I have proceeded my dream to be a full stack developer as it has been my lifelong ambition. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
                     I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
@@ -63,7 +63,7 @@ function AboutCard ({title, icon, description, projects} : Props) {
                 <Image src={icon} width={28} height={28} alt={title} />
             </div>
             <p className="white">{description}</p>
-            <span className="gray">{projects.toString()} projects</span>
+            <p className="gray">{projects.toString()} projects</p>
         </div>
     )
 }

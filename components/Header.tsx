@@ -2,14 +2,17 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 import NavBar from "./NavBar";
+import { useRouter } from 'next/router';
+
 
 export default function Header() {
+    const router = useRouter()
     return (
         <header>
             <NavBar />
             <div className="header flex light-bg">
                 <div>
-                    <button>Full Stack Developer</button>
+                    <h3 className="green">Full Stack Developer</h3>
                     <h1 className="white">Hi!</h1>
                     <h1 className="white">
                         <TypeAnimation
@@ -30,8 +33,7 @@ export default function Header() {
                             repeat={Infinity} // Repeat this Animation Sequence infinitely
                         /></h1>
                     <p className="gray">I design and code beautiful simple things, and I love what I do.</p>
-                    <a className="green" href="mailto:nusri.samath@gmail.com">Let&#39;s chat!</a><br/>
-                    <a className="green" href="https://drive.google.com/file/d/1KhYUT-Ta-E0x8nVE_Kvs5Z-VeK8Xdqr_/view?usp=share_link">See more</a>
+                    <button onClick={() => router.push('mailto:email@yahoo.com')}>Let&#39;s connect!</button>
                 </div>
                 <Image src="/images/nusri.png" width={463} height={513} alt="nusri samath" />
             </div>
