@@ -33,7 +33,7 @@ export default function Header() {
                             repeat={Infinity} // Repeat this Animation Sequence infinitely
                         /></h1>
                     <p className="gray">I design and code beautiful simple things, and I love what I do.</p>
-                    <button onClick={() => router.push('mailto:email@yahoo.com')}>Let&#39;s connect!</button>
+                    <button onClick={() => router.push('mailto:nusrisamath@gmail.com')}>Let&#39;s connect!</button>
                 </div>
                 <Image src="/images/nusri.png" width={463} height={513} alt="nusri samath" />
             </div>
