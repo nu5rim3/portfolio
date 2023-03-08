@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor-ts')
   .then((mod) => mod.AnimatedCursor), {
-  ssr: false
+  ssr: false,
 });
 
 const Home: NextPage = () => {
@@ -36,7 +36,14 @@ const Home: NextPage = () => {
       <Header />
 
       <main>
-        <AnimatedCursor />
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={10}
+          // color='0, 0, 0'
+          outerAlpha={0.2}
+          innerScale={0.5}
+          outerScale={5} 
+        />
         {/* About */}
         <About />
       </main>

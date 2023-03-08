@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 export default function About() {
     return (
@@ -27,22 +28,123 @@ export default function About() {
                         description="I deploy application using AWS."
                         projects={3} />
                 </div>
-                
+
                 <div className="flex-full about-text">
                     <h5 className="gray">Introduce</h5>
                     <h1 className="white">I&#39;m Nusri Samath</h1>
                     <h3 className="white">Design is not just what it looks like.<br /> Design is how it works!</h3>
-                    <p className="gray">I have proceeded my dream to be a full stack developer as it has been my lifelong ambition. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br/><br/>
-                    I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
+                    <p className="gray">I have proceeded my dream to be a full stack developer as it has been my lifelong ambition. During my 4 years of work as a freelancer, I had the opportunity to enhance my expertise by collaborating with different companies and by creating useful content for both business and customer use.<br /><br />
+                        I am naturally persevered, self-confident, quietly curios, innovative and constantly challenging my skills.</p>
                 </div>
             </div>
 
             <div className="flex partners justify-space">
+                {/*  only for mobile
+                
                 <Image src="/images/partners/wallety.png" height={45} width={180} alt="wallety" />
                 <Image src="/images/partners/artisty.png" height={45} width={180} alt="artisty" />
                 <Image src="/images/partners/khedma-lik.png" height={45} width={180} alt="khedma-lik" />
                 <Image src="/images/partners/directy.png" height={45} width={180} alt="directy" />
-                <Image src="/images/partners/telefy.png" height={45} width={180} alt="telefy" />
+                <Image src="/images/partners/telefy.png" height={45} width={180} alt="telefy" /> */}
+                <MouseParallaxContainer
+                    className="parallax"
+                    containerStyle={{
+                        width: "100%",
+                        display: "grid",
+                        gridTemplateColumns: "auto auto auto auto auto"
+                    }}
+                    globalFactorX={0.3}
+                    globalFactorY={0.3}
+                    resetOnLeave
+                >
+                    <MouseParallaxChild
+                        factorX={0.6}
+                        factorY={0.1}
+                        style={{
+                            background:
+                                "url(https://images.unsplash.com/photo-1611502867268-9193c5c45f09?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80",
+                            backgroundPositionY: "50%",
+                            transform: "scale(1.2)",
+                            position: "absolute",
+                            filter: "blur(4px) brightness(50%)",
+                            backgroundSize: "auto",
+                            backgroundRepeat: "repeat",
+                            width: "100%",
+                            height: "100%",
+                            backfaceVisibility: "hidden"
+                        }}
+                    />
+                    <MouseParallaxChild
+                        factorX={0.5}
+                        factorY={0.5}
+                        style={{
+                            filter: "invert(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "auto",
+                            height: "100%"
+                        }}
+                    >
+                        <img height="50%" src="/images/partners/aws.svg" alt="aws" />
+                    </MouseParallaxChild>
+                    <MouseParallaxChild
+                        factorX={0.7}
+                        factorY={0.5}
+                        style={{
+                            filter: "invert(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "auto",
+                            height: "100%"
+                        }}
+                    >
+                        <img height="50%" src="/images/partners/node.svg" alt="node" />
+                    </MouseParallaxChild>
+                    <MouseParallaxChild
+                        factorX={0.9}
+                        factorY={0.5}
+                        style={{
+                            filter: "invert(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "auto",
+                            height: "100%"
+                        }}
+                    >
+                        <img height="50%" src="/images/partners/react.svg" alt="react" />
+                    </MouseParallaxChild>
+                    <MouseParallaxChild
+                        factorX={0.7}
+                        factorY={0.5}
+                        style={{
+                            filter: "invert(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "auto",
+                            height: "100%"
+                        }}
+                    >
+                        <img height="50%" src="/images/partners/type.svg" alt="type" />
+                    </MouseParallaxChild>
+                    <MouseParallaxChild
+                        factorX={0.5}
+                        factorY={0.5}
+                        style={{
+                            filter: "invert(1)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "auto",
+                            height: "100%"
+                        }}
+                    >
+                        <img height="50%" src="/images/partners/python.svg" alt="python" />
+                    </MouseParallaxChild>
+                </MouseParallaxContainer>
             </div>
         </section>
     )
@@ -55,8 +157,8 @@ type Props = {
     projects: number
 }
 
-function AboutCard ({title, icon, description, projects} : Props) {
-    return(
+function AboutCard({ title, icon, description, projects }: Props) {
+    return (
         <div className="light-bg about-card">
             <div className="flex justify-space">
                 <h3 className="green">{title}</h3>
