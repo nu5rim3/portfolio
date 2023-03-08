@@ -4,9 +4,10 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+const AnimatedCursor = dynamic(() => import('react-animated-cursor-ts')
+  .then((mod) => mod.AnimatedCursor), {
   ssr: false
 });
 
