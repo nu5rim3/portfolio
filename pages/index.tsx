@@ -4,6 +4,12 @@ import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import dynamic from 'next/dynamic'
+
+const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+  ssr: false
+});
+
 const Home: NextPage = () => {
   return (
     <>
@@ -20,15 +26,16 @@ const Home: NextPage = () => {
         <meta property="og:site_name" content="Nusri - Full Stack Developer" />
         <meta property="og:locale" content="en_GB" />
         <title data-rh="true">Nusri Samath - Full Stack Developer</title>
-        <meta data-rh="true" property="og:type" content="website"/>
-        <meta data-rh="true" property="og:title" content="Nusri - Full Stack Developer"/>
-        <meta data-rh="true" property="og:image" content="/images/nusri.png"/>
+        <meta data-rh="true" property="og:type" content="website" />
+        <meta data-rh="true" property="og:title" content="Nusri - Full Stack Developer" />
+        <meta data-rh="true" property="og:image" content="/images/nusri.png" />
       </Head>
 
       {/* Header */}
       <Header />
 
       <main>
+        <AnimatedCursor />
         {/* About */}
         <About />
       </main>
