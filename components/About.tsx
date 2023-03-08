@@ -58,23 +58,6 @@ export default function About() {
                     resetOnLeave
                 >
                     <MouseParallaxChild
-                        factorX={0.6}
-                        factorY={0.1}
-                        style={{
-                            background:
-                                "url(https://images.unsplash.com/photo-1611502867268-9193c5c45f09?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80",
-                            backgroundPositionY: "50%",
-                            transform: "scale(1.2)",
-                            position: "absolute",
-                            filter: "blur(4px) brightness(50%)",
-                            backgroundSize: "auto",
-                            backgroundRepeat: "repeat",
-                            width: "100%",
-                            height: "100%",
-                            backfaceVisibility: "hidden"
-                        }}
-                    />
-                    <MouseParallaxChild
                         factorX={0.5}
                         factorY={0.5}
                         style={{
