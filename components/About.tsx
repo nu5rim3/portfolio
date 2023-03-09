@@ -69,7 +69,7 @@ export default function About() {
                             height: "100%"
                         }}
                     >
-                        <img height="50%" src="/images/partners/aws.svg" alt="aws" />
+                        <img height="30%" src="/images/partners/aws.svg" alt="aws" />
                     </MouseParallaxChild>
                     <MouseParallaxChild
                         factorX={0.7}
@@ -83,7 +83,7 @@ export default function About() {
                             height: "100%"
                         }}
                     >
-                        <img height="50%" src="/images/partners/node.svg" alt="node" />
+                        <img height="30%" src="/images/partners/node.svg" alt="node" />
                     </MouseParallaxChild>
                     <MouseParallaxChild
                         factorX={0.9}
@@ -97,7 +97,7 @@ export default function About() {
                             height: "100%"
                         }}
                     >
-                        <img height="50%" src="/images/partners/react.svg" alt="react" />
+                        <img height="30%" src="/images/partners/react.svg" alt="react" />
                     </MouseParallaxChild>
                     <MouseParallaxChild
                         factorX={0.7}
@@ -111,7 +111,7 @@ export default function About() {
                             height: "100%"
                         }}
                     >
-                        <img height="50%" src="/images/partners/type.svg" alt="type" />
+                        <img height="30%" src="/images/partners/type.svg" alt="type" />
                     </MouseParallaxChild>
                     <MouseParallaxChild
                         factorX={0.5}
@@ -125,7 +125,7 @@ export default function About() {
                             height: "100%"
                         }}
                     >
-                        <img height="50%" src="/images/partners/python.svg" alt="python" />
+                        <img height="30%" src="/images/partners/python.svg" alt="python" />
                     </MouseParallaxChild>
                 </MouseParallaxContainer>
             </div>
