@@ -9,7 +9,12 @@ export default function Footer() {
         <footer className="light-bg flex justify-space">
             <span className="white">Copyright © {year} <Link href="/">Nu5rim3</Link> - All rights reserved.</span>
             <ul className="flex">
-                <li>
+                 <li>
+                    <a href="https://linktr.ee/nusrisamath?utm_source=linktree_profile_share&ltsid=5ebc90f4-c5d9-4860-8c94-128a2707493a" target="_blank" rel="noreferrer">
+                        <Image src="/icons/linktree.svg" width={24} height={24} alt="youtube-icon" />
+                    </a>
+                </li>
+                {/* <li>
                     <a href="https://www.facebook.com/nsamath" target="_blank" rel="noreferrer">
                         <Image src="/icons/facebook.svg" width={24} height={24} alt="facebook-icon" />
                     </a>
@@ -27,11 +32,6 @@ export default function Footer() {
                 <li>
                     <a href="https://github.com/nu5rim3" target="_blank" rel="noreferrer">
                         <Image src="/icons/github.svg" width={24} height={24} alt="github-icon" />
-                    </a>
-                </li>
-                {/* <li>
-                    <a href="https://www.youtube.com/channel/UC8ainOoX4ZjOrtjYbP2LA1g" target="_blank" rel="noreferrer">
-                        <Image src="/icons/youtube.svg" width={24} height={24} alt="youtube-icon" />
                     </a>
                 </li> */}
             </ul>
