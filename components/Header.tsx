@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 export default function Header() {
     const router = useRouter();
 
-    const openInNewTab = (url) => {
+    const openInNewTab = (url: string) => {
         window.open(url, '_blank', 'noreferrer');
     };
 
