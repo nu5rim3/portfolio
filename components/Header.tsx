@@ -6,7 +6,12 @@ import { useRouter } from 'next/router';
 
 
 export default function Header() {
-    const router = useRouter()
+    const router = useRouter();
+
+    const openInNewTab = (url) => {
+        window.open(url, '_blank', 'noreferrer');
+    };
+
     return (
         <header>
             <NavBar />
@@ -33,7 +38,7 @@ export default function Header() {
                             repeat={Infinity} // Repeat this Animation Sequence infinitely
                         /></h1>
                     <p className="gray">I design and code beautiful simple things, and I love what I do.</p>
-                    <button onClick={() => router.push('mailto:nusrisamath@gmail.com')}>Let&#39;s connect!</button>
+                    <button onClick={() => openInNewTab('https://calendly.com/nusrisamath/30min')}>Let&#39;s connect!</button>
                 </div>
                 <Image src="/images/nusri.png" width={463} height={513} alt="nusri samath" />
             </div>
