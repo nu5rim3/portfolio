@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Nusri Samath" />
         <meta name="keywords" content="ReactJS, NextJS" />
-        <meta name="description" content="I am a talented Front-End developer with a UI/UX design background." />
+        <meta name="description" content="I am a talented Full Stack developer." />
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#2D2E32" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
